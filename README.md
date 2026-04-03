@@ -2,7 +2,7 @@
 
 A RAG pipeline that lets you upload any SEC 10-K filing and ask questions about it. The system chunks and indexes the document on upload, generates an executive summary via Map-Reduce, then answers financial questions using hybrid retrieval, cross-encoder reranking, and Llama 3.3 70B. Deployed on HuggingFace Spaces with Docker.
 
-Live demo: https://github.com/Filippo295/10K-Financial-RAG/tree/main
+**Live Demo:** https://huggingface.co/spaces/Filippo295/10K-Financial-RAG
 
 ---
 
