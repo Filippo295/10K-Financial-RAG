@@ -1,0 +1,14 @@
+pymupdf
+langchain
+langchain-text-splitters
+langchain-groq
+langchain-core
+sentence-transformers
+rank-bm25
+faiss-cpu
+numpy
+gradio
+python-dotenv
+fastapi
+uvicorn
+python-multipart
