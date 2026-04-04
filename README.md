@@ -51,7 +51,7 @@ Retrieval quality was measured with Mean Reciprocal Rank (MRR) on 10 simulated f
 
 - The system is synchronous, meaning requests are queued and a slow query from one user blocks all others. This could be addressed with async request handling
 - Latency has two sources. At upload, the bottleneck is the Map-Reduce summarizer which makes 11 LLM calls (10 map + 1 reduce); chunking and embedding add some overhead especially on longer documents but are still significantly faster, while indexing is negligible. At query time, retrieval and reranking are fast and the bottleneck is the single LLM call where the retrieved context is injected into the prompt. Implementing streaming would reduce the perceived latency by showing the answer word by word as it is generated, similar to how LLM chatbots work
-- - The MRR evaluation uses only 10 questions on a single document (Tesla 10-K), which is a narrow benchmark. Evaluating across multiple filings and question types would give a more reliable picture of retrieval quality
+- The MRR evaluation uses only 10 questions on a single document (Tesla 10-K), which is a narrow benchmark. Evaluating across multiple filings and question types would give a more reliable picture of retrieval quality
 
 ---
 
