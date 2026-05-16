@@ -25,7 +25,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
                 run_btn = gr.Button("Ask", variant="primary")
         # RAG OUTPUTS
         with gr.Column():
-            out_text = gr.Textbox(label="Answer", lines=6)
+            out_text = gr.Textbox(label="Answer", lines=12)
             out_summary = gr.Textbox(label="Document Summary", lines=12)
 
     pdf_upload.change(
